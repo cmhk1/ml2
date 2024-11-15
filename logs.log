@@ -1,0 +1,872 @@
+2024-11-15 19:11:52,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:11:52,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:11:52,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:11:52,343:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:11:52,755:INFO:Initializing load_model()
+2024-11-15 19:11:52,755:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:11:52,964:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:11:55,903:INFO:Initializing load_model()
+2024-11-15 19:11:55,904:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:11:55,926:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:11:55,960:INFO:Initializing predict_model()
+2024-11-15 19:11:55,960:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x330946e10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16c17fa60>)
+2024-11-15 19:11:55,960:INFO:Checking exceptions
+2024-11-15 19:11:55,960:INFO:Preloading libraries
+2024-11-15 19:11:55,960:INFO:Set up data.
+2024-11-15 19:11:55,963:INFO:Set up index.
+2024-11-15 19:12:03,111:INFO:Initializing load_model()
+2024-11-15 19:12:03,112:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:12:03,139:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:12:05,831:INFO:Initializing load_model()
+2024-11-15 19:12:05,832:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:12:05,858:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:12:12,742:INFO:Initializing load_model()
+2024-11-15 19:12:12,742:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:12:12,764:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:15:39,100:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:15:39,100:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:15:39,100:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:15:39,100:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:15:39,519:INFO:Initializing load_model()
+2024-11-15 19:15:39,519:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:15:39,739:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:15:52,324:INFO:Initializing load_model()
+2024-11-15 19:15:52,325:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:15:52,348:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:15:52,378:INFO:Initializing predict_model()
+2024-11-15 19:15:52,379:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x3330eb0d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x3295e1620>)
+2024-11-15 19:15:52,379:INFO:Checking exceptions
+2024-11-15 19:15:52,379:INFO:Preloading libraries
+2024-11-15 19:15:52,379:INFO:Set up data.
+2024-11-15 19:15:52,382:INFO:Set up index.
+2024-11-15 19:19:44,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:19:44,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:19:44,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:19:44,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:19:44,527:INFO:Initializing load_model()
+2024-11-15 19:19:44,527:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:19:44,744:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:19:53,018:INFO:Initializing load_model()
+2024-11-15 19:19:53,018:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:19:53,041:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:19:53,066:INFO:Initializing predict_model()
+2024-11-15 19:19:53,066:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33995d010>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x32fee5b20>)
+2024-11-15 19:19:53,066:INFO:Checking exceptions
+2024-11-15 19:19:53,066:INFO:Preloading libraries
+2024-11-15 19:19:53,066:INFO:Set up data.
+2024-11-15 19:19:53,069:INFO:Set up index.
+2024-11-15 19:21:07,051:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:21:07,051:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:21:07,051:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:21:07,051:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:21:07,358:INFO:Initializing load_model()
+2024-11-15 19:21:07,358:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:07,560:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:09,819:INFO:Initializing load_model()
+2024-11-15 19:21:09,819:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:09,843:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:09,866:INFO:Initializing predict_model()
+2024-11-15 19:21:09,866:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33c2ea390>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x33c188220>)
+2024-11-15 19:21:09,866:INFO:Checking exceptions
+2024-11-15 19:21:09,866:INFO:Preloading libraries
+2024-11-15 19:21:09,867:INFO:Set up data.
+2024-11-15 19:21:09,869:INFO:Set up index.
+2024-11-15 19:21:15,235:INFO:Initializing load_model()
+2024-11-15 19:21:15,236:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:15,257:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:15,913:INFO:Initializing load_model()
+2024-11-15 19:21:15,914:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:15,940:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:15,973:INFO:Initializing predict_model()
+2024-11-15 19:21:15,973:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x3328fc950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x33bf95760>)
+2024-11-15 19:21:15,973:INFO:Checking exceptions
+2024-11-15 19:21:15,973:INFO:Preloading libraries
+2024-11-15 19:21:15,974:INFO:Set up data.
+2024-11-15 19:21:15,976:INFO:Set up index.
+2024-11-15 19:21:19,752:INFO:Initializing load_model()
+2024-11-15 19:21:19,752:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:19,777:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:20,296:INFO:Initializing load_model()
+2024-11-15 19:21:20,296:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:20,322:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:21,170:INFO:Initializing load_model()
+2024-11-15 19:21:21,171:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:21,191:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:21,214:INFO:Initializing predict_model()
+2024-11-15 19:21:21,215:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x1057f5390>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x339cf9f80>)
+2024-11-15 19:21:21,215:INFO:Checking exceptions
+2024-11-15 19:21:21,215:INFO:Preloading libraries
+2024-11-15 19:21:21,215:INFO:Set up data.
+2024-11-15 19:21:21,216:INFO:Set up index.
+2024-11-15 19:21:23,494:INFO:Initializing load_model()
+2024-11-15 19:21:23,495:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:23,519:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:24,016:INFO:Initializing load_model()
+2024-11-15 19:21:24,016:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:24,039:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:26,880:INFO:Initializing load_model()
+2024-11-15 19:21:26,881:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:26,906:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:27,662:INFO:Initializing load_model()
+2024-11-15 19:21:27,662:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:27,687:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:27,714:INFO:Initializing predict_model()
+2024-11-15 19:21:27,714:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x32e2737d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x10575b880>)
+2024-11-15 19:21:27,714:INFO:Checking exceptions
+2024-11-15 19:21:27,714:INFO:Preloading libraries
+2024-11-15 19:21:27,714:INFO:Set up data.
+2024-11-15 19:21:27,717:INFO:Set up index.
+2024-11-15 19:21:31,925:INFO:Initializing load_model()
+2024-11-15 19:21:31,925:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:31,945:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:32,932:INFO:Initializing load_model()
+2024-11-15 19:21:32,933:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:32,957:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:32,989:INFO:Initializing predict_model()
+2024-11-15 19:21:32,990:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x339d9ba50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x339cfa480>)
+2024-11-15 19:21:32,990:INFO:Checking exceptions
+2024-11-15 19:21:32,990:INFO:Preloading libraries
+2024-11-15 19:21:32,990:INFO:Set up data.
+2024-11-15 19:21:32,992:INFO:Set up index.
+2024-11-15 19:21:37,140:INFO:Initializing load_model()
+2024-11-15 19:21:37,140:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:37,164:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:38,175:INFO:Initializing load_model()
+2024-11-15 19:21:38,176:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:21:38,200:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:21:38,228:INFO:Initializing predict_model()
+2024-11-15 19:21:38,228:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33295e490>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'TOD', 'Rush',
+                                             'Wind', 'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding'...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=9, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=220, n_jobs=-1,
+                              num_parallel_tree=None, random_state=1436, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x332de5580>)
+2024-11-15 19:21:38,228:INFO:Checking exceptions
+2024-11-15 19:21:38,228:INFO:Preloading libraries
+2024-11-15 19:21:38,228:INFO:Set up data.
+2024-11-15 19:21:38,230:INFO:Set up index.
+2024-11-15 19:37:24,516:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:37:24,516:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:37:24,516:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:37:24,516:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:37:24,969:INFO:Initializing load_model()
+2024-11-15 19:37:24,969:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:25,196:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:28,998:INFO:Initializing load_model()
+2024-11-15 19:37:28,999:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:29,015:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:29,052:INFO:Initializing predict_model()
+2024-11-15 19:37:29,052:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x335c39390>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.05,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=50, n_jobs=-1,
+                              num_parallel_tree=None, random_state=5192, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x335c1d260>)
+2024-11-15 19:37:29,052:INFO:Checking exceptions
+2024-11-15 19:37:29,052:INFO:Preloading libraries
+2024-11-15 19:37:29,052:INFO:Set up data.
+2024-11-15 19:37:29,055:INFO:Set up index.
+2024-11-15 19:37:40,194:INFO:Initializing load_model()
+2024-11-15 19:37:40,194:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:40,209:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:41,837:INFO:Initializing load_model()
+2024-11-15 19:37:41,837:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:41,851:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:41,891:INFO:Initializing predict_model()
+2024-11-15 19:37:41,891:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x332b7aa90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.05,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=50, n_jobs=-1,
+                              num_parallel_tree=None, random_state=5192, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x335c91440>)
+2024-11-15 19:37:41,892:INFO:Checking exceptions
+2024-11-15 19:37:41,892:INFO:Preloading libraries
+2024-11-15 19:37:41,892:INFO:Set up data.
+2024-11-15 19:37:41,895:INFO:Set up index.
+2024-11-15 19:37:45,842:INFO:Initializing load_model()
+2024-11-15 19:37:45,842:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:45,858:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:46,810:INFO:Initializing load_model()
+2024-11-15 19:37:46,810:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:37:46,824:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:37:46,863:INFO:Initializing predict_model()
+2024-11-15 19:37:46,863:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x1105e1610>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.05,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=50, n_jobs=-1,
+                              num_parallel_tree=None, random_state=5192, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x335891f80>)
+2024-11-15 19:37:46,863:INFO:Checking exceptions
+2024-11-15 19:37:46,863:INFO:Preloading libraries
+2024-11-15 19:37:46,863:INFO:Set up data.
+2024-11-15 19:37:46,866:INFO:Set up index.
+2024-11-15 19:42:09,872:INFO:Initializing load_model()
+2024-11-15 19:42:09,874:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:42:09,896:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:42:15,247:INFO:Initializing load_model()
+2024-11-15 19:42:15,247:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:42:15,259:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:42:15,302:INFO:Initializing predict_model()
+2024-11-15 19:42:15,302:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x335ceaa10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.05,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=50, n_jobs=-1,
+                              num_parallel_tree=None, random_state=5192, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x335891da0>)
+2024-11-15 19:42:15,302:INFO:Checking exceptions
+2024-11-15 19:42:15,302:INFO:Preloading libraries
+2024-11-15 19:42:15,302:INFO:Set up data.
+2024-11-15 19:42:15,305:INFO:Set up index.
+2024-11-15 19:57:57,618:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:57:57,618:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:57:57,618:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:57:57,618:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:57:58,059:INFO:Initializing load_model()
+2024-11-15 19:57:58,059:INFO:load_model(model_name=my_limited_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:57:58,286:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:58:07,983:INFO:Initializing load_model()
+2024-11-15 19:58:07,983:INFO:load_model(model_name=my_limited_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:58:07,996:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:58:08,939:INFO:Initializing load_model()
+2024-11-15 19:58:08,939:INFO:load_model(model_name=my_limited_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:58:08,951:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:59:03,619:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:03,619:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:03,619:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:03,619:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:03,903:INFO:Initializing load_model()
+2024-11-15 19:59:03,903:INFO:load_model(model_name=my_limited_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:59:04,064:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:59:05,901:INFO:Initializing load_model()
+2024-11-15 19:59:05,901:INFO:load_model(model_name=my_limited_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:59:05,920:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:59:38,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:38,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:38,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:38,403:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 19:59:38,703:INFO:Initializing load_model()
+2024-11-15 19:59:38,703:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:59:38,866:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 19:59:40,982:INFO:Initializing load_model()
+2024-11-15 19:59:40,983:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 19:59:41,002:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:00:18,290:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:00:18,290:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:00:18,290:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:00:18,290:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:00:18,608:INFO:Initializing load_model()
+2024-11-15 20:00:18,608:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:00:18,786:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:00:21,130:INFO:Initializing load_model()
+2024-11-15 20:00:21,130:INFO:load_model(model_name=my_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:00:21,149:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:00:21,190:INFO:Initializing predict_model()
+2024-11-15 20:00:21,190:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33ace4190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.05,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=50, n_jobs=-1,
+                              num_parallel_tree=None, random_state=5192, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x32e9b72e0>)
+2024-11-15 20:00:21,190:INFO:Checking exceptions
+2024-11-15 20:00:21,190:INFO:Preloading libraries
+2024-11-15 20:00:21,191:INFO:Set up data.
+2024-11-15 20:00:21,194:INFO:Set up index.
+2024-11-15 20:18:52,962:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:18:52,962:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:18:52,962:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:18:52,962:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:18:53,404:INFO:Initializing load_model()
+2024-11-15 20:18:53,404:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:18:53,627:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:18:56,308:INFO:Initializing load_model()
+2024-11-15 20:18:56,309:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:18:56,326:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:18:56,363:INFO:Initializing predict_model()
+2024-11-15 20:18:56,363:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33bf2e8d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.2,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=11, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=20, n_jobs=-1,
+                              num_parallel_tree=None, random_state=2075, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x32f3f7f60>)
+2024-11-15 20:18:56,363:INFO:Checking exceptions
+2024-11-15 20:18:56,363:INFO:Preloading libraries
+2024-11-15 20:18:56,363:INFO:Set up data.
+2024-11-15 20:18:56,366:INFO:Set up index.
+2024-11-15 20:19:02,054:INFO:Initializing load_model()
+2024-11-15 20:19:02,055:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:19:02,070:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:19:02,791:INFO:Initializing load_model()
+2024-11-15 20:19:02,792:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:19:02,804:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:19:02,846:INFO:Initializing predict_model()
+2024-11-15 20:19:02,846:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33c6bed90>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.2,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=11, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=20, n_jobs=-1,
+                              num_parallel_tree=None, random_state=2075, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x339dfa7a0>)
+2024-11-15 20:19:02,846:INFO:Checking exceptions
+2024-11-15 20:19:02,846:INFO:Preloading libraries
+2024-11-15 20:19:02,846:INFO:Set up data.
+2024-11-15 20:19:02,849:INFO:Set up index.
+2024-11-15 20:19:05,279:INFO:Initializing load_model()
+2024-11-15 20:19:05,279:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:19:05,295:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:19:06,011:INFO:Initializing load_model()
+2024-11-15 20:19:06,011:INFO:load_model(model_name=my_reduced_bike_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:19:06,024:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:19:06,064:INFO:Initializing predict_model()
+2024-11-15 20:19:06,064:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x33c68ac10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.2,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=11, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=20, n_jobs=-1,
+                              num_parallel_tree=None, random_state=2075, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x339dfa480>)
+2024-11-15 20:19:06,064:INFO:Checking exceptions
+2024-11-15 20:19:06,064:INFO:Preloading libraries
+2024-11-15 20:19:06,064:INFO:Set up data.
+2024-11-15 20:19:06,066:INFO:Set up index.
+2024-11-15 20:43:30,053:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:43:30,053:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:43:30,053:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:43:30,053:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-11-15 20:43:30,505:INFO:Initializing load_model()
+2024-11-15 20:43:30,505:INFO:load_model(model_name=my_vehicule_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:43:30,719:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:43:32,812:INFO:Initializing load_model()
+2024-11-15 20:43:32,813:INFO:load_model(model_name=my_vehicule_model, platform=None, authentication=None, verbose=True)
+2024-11-15 20:43:32,830:WARNING:/opt/anaconda3/lib/python3.11/site-packages/pycaret/internal/pipeline.py:148: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '24.3.1', 'setuptools': '68.2.2', 'pycaret': '3.3.2', 'IPython': '8.20.0', 'ipywidgets': '7.6.5', 'tqdm': '4.65.0', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.3', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.59.0', 'requests': '2.31.0', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.2.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.0', 'markupsafe': '2.1.3', 'pickle5': 'Not installed', 'cloudpickle': '2.2.1', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.0.2'}, 'python': {'version': '3.11.7', 'machine': 'arm64'}}
+pickle: {'deps_info': {'pip': '24.1.2', 'setuptools': '75.1.0', 'pycaret': '3.3.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.66.6', 'numpy': '1.26.4', 'pandas': '2.1.4', 'jinja2': '3.1.4', 'scipy': '1.11.4', 'joblib': '1.3.2', 'sklearn': '1.4.2', 'pyod': '2.0.2', 'imblearn': '0.12.4', 'category_encoders': '2.6.4', 'lightgbm': '4.5.0', 'numba': '0.60.0', 'requests': '2.32.3', 'matplotlib': '3.7.5', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.24.1', 'plotly-resampler': 'Not installed', 'kaleido': '0.4.1', 'schemdraw': '0.15', 'statsmodels': '0.14.4', 'sktime': '0.26.0', 'tbats': '1.1.3', 'pmdarima': '2.0.4', 'psutil': '5.9.5', 'markupsafe': '3.0.2', 'pickle5': 'Not installed', 'cloudpickle': '3.1.0', 'deprecation': '2.1.0', 'xxhash': '3.5.0', 'wurlitzer': '3.1.1'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2024-11-15 20:43:32,869:INFO:Initializing predict_model()
+2024-11-15 20:43:32,869:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x3345eb110>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['weathersit', 'temp'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['weekday', 'season', 'holiday',
+                                             'workingday', 'Rush', 'Wind',
+                                             'Hum', 'hr', 'mnth'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 Trans...
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.15,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=3, max_leaves=None, min_child_weight=4,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=120, n_jobs=-1,
+                              num_parallel_tree=None, random_state=421, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x33e29e340>)
+2024-11-15 20:43:32,869:INFO:Checking exceptions
+2024-11-15 20:43:32,869:INFO:Preloading libraries
+2024-11-15 20:43:32,870:INFO:Set up data.
+2024-11-15 20:43:32,873:INFO:Set up index.
