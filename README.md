@@ -1,6 +1,6 @@
-#Machine-Learning 2: University Project
+# Machine-Learning 2: University Project
 
-## Project: Vehicules Availability Prediction
+## Vehicules Availability Prediction
 
 ### Project Overview
 
