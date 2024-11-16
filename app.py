@@ -1,177 +1,117 @@
-# VEHICULES AVAILABILITY PREDICTION
+# VEHICLES AVAILABILITY PREDICTION
 import streamlit as st
 import pandas as pd
 import numpy as np
-import datetime as dt
-import pycaret
-from pycaret.classification import *
+import pickle
 
-# Loading the trained model
-model = load_model(model_name='my_vehicule_model')
+# Load the trained raw model (e.g., XGBRegressor) using pickle
+with open('my_vehicule_model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
-# Defining the function which will make the prediction using the data which the user inputs TRANSFORMATIONS & RUNNING MODEL
-def prediction(dteday, season, yr, mnth, hr, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, tod, rush, wind, Hum, prev_count):
+# Defining the function to preprocess and make predictions
+def preprocess_and_predict(dteday, hr, holiday, weathersit, temp, rush, wind, Hum):
+    # Preprocessing user inputs
+    mnth = dteday.month
 
-    if dteday.month == 1:
-        mnth = 1
-    elif dteday.month == 2:
-        mnth = 2
-    elif dteday.month == 3:
-        mnth = 3
-    elif dteday.month == 4:
-        mnth = 4
-    elif dteday.month == 5:
-        mnth = 5
-    elif dteday.month == 6:
-        mnth = 6
-    elif dteday.month == 7:
-        mnth = 7
-    elif dteday.month == 8:
-        mnth = 8
-    elif dteday.month == 9:
-        mnth = 9
-    elif dteday.month == 10:
-        mnth = 10
-    elif dteday.month == 11:
-        mnth = 11
+    # Season calculation based on the month
+    if mnth in [3, 4, 5]:
+        season = 1  # Spring
+    elif mnth in [6, 7, 8]:
+        season = 2  # Summer
+    elif mnth in [9, 10, 11]:
+        season = 3  # Fall
     else:
-        mnth = 12
+        season = 4  # Winter
 
-    if dteday.month in [3,4,5]:
-        season = 1
-    elif dteday.month in [6,7,8]:
-        season = 2
-    elif dteday.month in [9,10,11]:
-        season = 3
-    else:
-        season = 4
-
+    # Extract hour from time input
     hr = hr.hour
 
-    if holiday == "No":
-        holiday = 0
-    else:
-        holiday = 1
+    # Convert holiday input into numeric
+    holiday = 0 if holiday == "No" else 1
 
-    weekday = dteday.weekday
+    # Calculate weekday from the input date
+    weekday = dteday.weekday()
 
-    if (dteday.weekday in [1,2,3,4,5]) and (holiday == 0):
-        workingday = 1
-    else:
-        workingday = 0
+    # Convert weather situation input into numeric
+    weathersit_mapping = {
+        "Clear/Sunny": 1,
+        "Cloudy/Misty": 2,
+        "Light Snow/Rain": 3,
+        "Heavy Rain/Snow": 4,
+    }
+    weathersit = weathersit_mapping[weathersit]
 
-    if weathersit == "Clear/Sunny":
-        weathersit = 1
-    elif weathersit == "Cloudy/Misty":
-        weathersit = 2
-    elif weathersit == "Light Snow/Rain":
-        weathersit = 3
-    else:
-        weathersit = 4
-    
-    tod = hr
-    if 6 <= tod < 12:
-        tod = "Morning"
-    elif 12 <= tod < 17:
-        tod = "Afternoon"
-    elif 17 <= tod < 21:
-        tod = "Evening"
-    else:
-        tod = "Night"
+    # Normalize numerical inputs
+    temp = temp / 41  # Normalize temperature (assuming max temp = 41°C)
+    rush = 1 if rush == "Rush" else 0
+    wind_mapping = {"Low": "Wind_Low", "Medium": "Wind_Medium", "High": "Wind_High"}
+    wind = wind_mapping[wind]
+    hum_mapping = {"Low": "Hum_Low", "Medium": "Hum_Medium", "High": "Hum_High"}
+    Hum = hum_mapping[Hum]
 
-    temp = temp / 41
-    atemp = atemp / 50
-    hum = hum / 100
-    windspeed = windspeed / 100
-
-    data = {
+    # Create a DataFrame for input features
+    input_data = {
         'season': season,
-        'yr': yr,  
-        'mnth': mnth,  
-        'hr': hr,  
-        'holiday' : holiday,
+        'mnth': mnth,
+        'hr': hr,
+        'holiday': holiday,
         'weekday': weekday,
-        'workingday' : workingday,
         'weathersit': weathersit,
         'temp': temp,
-        'atemp' : atemp,
-        'hum': hum,
-        'windspeed': windspeed, 
-        'TOD': tod,
         'Rush': rush,
-        'Wind': wind,
-        'Hum' : Hum,
-        'prev_count': prev_count
+        wind: 1,  # Set one-hot encoded value for wind
+        Hum: 1,   # Set one-hot encoded value for humidity
     }
 
-    # Convert data into dataframe
-    df = pd.DataFrame.from_dict([data])
+    # One-hot encode remaining categorical variables
+    for col in ['season', 'mnth', 'hr', 'weekday']:
+        for value in range(1, 13 if col == 'mnth' else (24 if col == 'hr' else 7)):
+            input_data[f"{col}_{value}.0"] = 1 if input_data.get(col) == value else 0
 
-    predicted_value = predict_model(model, df)
-    predicted_value = pd.DataFrame(predicted_value)
-    prediction2 = predicted_value["prediction_label"][0]
+    # Drop original non-encoded columns
+    input_data = {key: val for key, val in input_data.items() if '_' in key or isinstance(val, (int, float))}
 
-    return prediction2
-    
+    # Convert to DataFrame
+    input_df = pd.DataFrame([input_data])
 
-##############################
+    # Fill missing columns with 0 (to match training data)
+    for col in model.feature_names_in_:
+        if col not in input_df:
+            input_df[col] = 0
 
-# This is the main function in which we define our webpage FRONT END 
-def main_vehicle_prediction():       
-    # Front-end elements of the web page 
+    # Reorder columns to match training data
+    input_df = input_df[model.feature_names_in_]
+
+    # Make prediction using the raw model
+    predicted_value = model.predict(input_df)[0]
+    return predicted_value
+
+# Define the main function for the Streamlit app
+def main_vehicle_prediction():
+    # Front-end elements of the web page
     html_temp = """
     <div style="background-color:green;padding:10px">
-    <h2 style="color:white;text-align:center;">Vehicule availability checker</h2>
+    <h2 style="color:white;text-align:center;">Vehicle Availability Checker</h2>
     </div>"""
 
     st.markdown(html_temp, unsafe_allow_html=True)
+    st.subheader("Fill in the fields to predict the number of vehicles required.")
 
-    # Subtitle of our webapp
-    st.subheader("Fill the following questions to see how many vehicules are needed at a specific point in time.")
+    # Input fields for user data
+    dteday = st.date_input("Select a date for vehicle availability", value=pd.Timestamp.now().date())
+    hr = st.time_input("Select an hour", value=pd.Timestamp.now().time())
+    holiday = st.selectbox("Is it a holiday?", ("No", "Yes"))
+    rush = st.selectbox("Is it rush hour?", ("Not Rush", "Rush"))
+    wind = st.selectbox("How windy is it?", ("Low", "Medium", "High"))
+    weathersit = st.selectbox("How is the weather?", ("Clear/Sunny", "Cloudy/Misty", "Light Snow/Rain", "Heavy Rain/Snow"))
+    temp = st.slider("Temperature (°C)", min_value=-30, max_value=50, value=20)
+    Hum = st.selectbox("Humidity level", ("Low", "Medium", "High"))
 
-    ################################
-          
-    # Following lines create input fields for prediction 
-    dteday = st.date_input("What date would you like the vehicules?", format="YYYY-MM-DD", value="today")
+    # Prediction result
+    if st.button("Predict"):
+        result = preprocess_and_predict(dteday, hr, holiday, weathersit, temp, rush, wind, Hum)
+        rounded_result = round(1000 - result)  # Round the result to a whole number
+        st.success(f"The optimal number of vehicles to deploy is: {rounded_result}")
 
-    hr = st.time_input("What hour would you like the vehicules?", value="now", step=3600)
-
-    holiday = st.selectbox("Is it a holiday?", ("Yes", "No"))
-
-    rush = st.selectbox("Is it rush hour?", ("Rush", "Not Rush"))
-
-    winds = ("Low", "Medium", "High")
-    wind = st.selectbox("How windy is it?", winds)
-
-    weathers = ("Clear/Sunny", "Cloudy/Misty", "Light Snow/Rain", "Heavy Rain/Snow")
-    weathersit = st.selectbox("How is the weather?", weathers)
-
-    temp = st.slider("What is the temperature in Celsius?", -30, 50, 1)
-    
-    Hums = ("Low", "Medium", "High")
-    Hum = st.selectbox("How's the humidity?", Hums)
-
-    # Variables that are ignored in PyCaret so we don't care about the value; only included to have the full DF
-    yr = 0
-    windspeed = 0
-    atemp = 0
-    hum = 0
-    prev_count = 0
-
-    # Variables that will be calculated afterwards
-    weekday = 0
-    workingday = 0
-    season = 0
-    tod = 0
-    mnth = 0
-
-    result = ""
-    # When 'Predict' is clicked, make the prediction and store it 
-    if st.button("Predict"): 
-        result = prediction(dteday, season, yr, mnth, hr, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, tod, rush, wind, Hum, prev_count)
-
-        st.success(f"The optimal amount of vehicules to deploy for the selected date and time is {1000 - result}")
-
-      
 if __name__ == '__main__':
     main_vehicle_prediction()
