@@ -1,6 +1,7 @@
 setuptools>=65.5.1
+wheel
 streamlit==1.25.0
 pandas==2.0.3
-numpy==1.24.2
+numpy==1.23.5
 scikit-learn==1.2.2
 xgboost==1.7.6
